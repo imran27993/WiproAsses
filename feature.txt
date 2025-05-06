@@ -1,0 +1,4 @@
+this is assesment
+linux,shell scripting,git
+source code management with git
+asssesment 2

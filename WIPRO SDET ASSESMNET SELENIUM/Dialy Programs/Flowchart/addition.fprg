@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="addition"/>
+        <attribute name="authors" value="Rohan Kumar"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-25 04:39:30 PM"/>
+        <attribute name="created" value="Um9oYW4gS3VtYXI7Uk9IQU47MjAyNS0wNC0yNTswMzoyNDoxNyBQTTsyNzA1"/>
+        <attribute name="edited" value="Um9oYW4gS3VtYXI7Uk9IQU47MjAyNS0wNC0yNTswNDozOTozMCBQTTsxOzI4MTU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c" type="Integer" array="False" size=""/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <declare name="res" type="Integer" array="False" size=""/>
+            <assign variable="res" expression="add(a,b)"/>
+            <output expression="&quot;addition of a and b using add function:&quot;" newline="False"/>
+            <output expression="res" newline="True"/>
+        </body>
+    </function>
+    <function name="add" type="Integer" variable="c">
+        <parameters>
+            <parameter name="a" type="Integer" array="False"/>
+            <parameter name="b" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="c" type="Integer" array="False" size=""/>
+            <assign variable="c" expression="a+b"/>
+        </body>
+    </function>
+</flowgorithm>

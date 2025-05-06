@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="prime or not"/>
+        <attribute name="authors" value="Rohan Kumar"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-25 05:51:31 PM"/>
+        <attribute name="created" value="Um9oYW4gS3VtYXI7Uk9IQU47MjAyNS0wNC0yNTswNDozOTozMiBQTTsyNzA5"/>
+        <attribute name="edited" value="Um9oYW4gS3VtYXI7Uk9IQU47MjAyNS0wNC0yNTswNTo1MTozMSBQTTsxOzI4MTE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, i" type="Integer" array="False" size=""/>
+            <input variable="n"/>
+            <declare name="isPrime" type="Boolean" array="False" size=""/>
+            <assign variable="isPrime" expression="true"/>
+            <for variable="i" start="2" end="sqrt(n)" direction="inc" step="1">
+                <if expression="n%i==0">
+                    <then>
+                        <assign variable="isPrime" expression="false"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <if expression="isPrime==true">
+                <then>
+                    <output expression="&quot;Prime no&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;not a prime&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

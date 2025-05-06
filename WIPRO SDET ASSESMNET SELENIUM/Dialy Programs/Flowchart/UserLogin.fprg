@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="UserLogin"/>
+        <attribute name="authors" value="Rohan Kumar"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-27 12:22:35 AM"/>
+        <attribute name="created" value="Um9oYW4gS3VtYXI7Uk9IQU47MjAyNS0wNC0yNzsxMjowNDo0MCBBTTsyNjg2"/>
+        <attribute name="edited" value="Um9oYW4gS3VtYXI7Uk9IQU47MjAyNS0wNC0yNzsxMjoyMjozNSBBTTsxOzI3OTg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="correctUsername, correctPassword" type="String" array="False" size=""/>
+            <assign variable="correctUsername" expression="&quot;_rohan_2103&quot;"/>
+            <assign variable="correctPassword" expression="&quot;xyz&quot;"/>
+            <declare name="attemptCount" type="Integer" array="False" size=""/>
+            <assign variable="attemptCount" expression="0"/>
+            <declare name="loginSuccessful" type="Boolean" array="False" size=""/>
+            <assign variable="loginSuccessful" expression="false"/>
+            <while expression="attemptCount&lt;3">
+                <output expression="&quot;Enter Username:&quot;" newline="True"/>
+                <declare name="username" type="String" array="False" size=""/>
+                <input variable="username"/>
+                <output expression="&quot;Enter password:&quot;" newline="True"/>
+                <declare name="password" type="String" array="False" size=""/>
+                <input variable="password"/>
+                <if expression="(username==correctUsername) &amp;&amp; (password==correctPassword)">
+                    <then>
+                        <output expression="&quot;Login Successful&quot;" newline="True"/>
+                        <assign variable="loginSuccessful" expression="true"/>
+                        <breakpoint expression="" always="True"/>
+                    </then>
+                    <else>
+                        <assign variable="attemptCount" expression="attemptCount+1"/>
+                        <output expression="&quot;Incorrect Username or Password. Attempts left: &quot;&amp;(3-attemptCount)" newline="True"/>
+                    </else>
+                </if>
+            </while>
+            <if expression="!loginSuccessful">
+                <then>
+                    <output expression="&quot;Account Locked&quot;" newline="True"/>
+                </then>
+                <else/>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

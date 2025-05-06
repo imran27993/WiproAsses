@@ -1,0 +1,13 @@
+Jenkins
+
+Username- rps
+Password- Rps@123
+
+MySQL
+
+Username- root
+Password- Rps@123
+
+ubantu 
+ Username- rps
+Password- Rps@123
